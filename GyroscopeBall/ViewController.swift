@@ -13,9 +13,9 @@ class ViewController: UIViewController, BallBuilder {
     
     private var motionManager = CMMotionManager()
     private var timer: Timer!
-    var animator: UIDynamicAnimator!
-    var colusion: UICollisionBehavior!
-    var ball: UIView!
+    private var animator: UIDynamicAnimator!
+    private var colusion: UICollisionBehavior!
+    private var ball: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,5 @@ class ViewController: UIViewController, BallBuilder {
         animator.addBehavior(colusion)
 
     }
-    
 }
 

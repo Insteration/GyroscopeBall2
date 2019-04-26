@@ -9,6 +9,7 @@
 import UIKit
 
 class BallLabel: UILabel {
+    
     var labelText: String
     
     init(_ labelText: String) {
