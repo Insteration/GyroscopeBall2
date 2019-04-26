@@ -15,10 +15,17 @@ class BallLabel: UILabel {
         
         self.labelText = labelText
         
-        super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        
-        
-        
+        super.init(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        self.font = .systemFont(ofSize: 40)
+        self.textColor = .white
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowRadius = 1
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.layer.masksToBounds = false
+        self.textAlignment = .center
+        self.contentMode = .center
+        self.text = labelText
     }
     
     required init?(coder aDecoder: NSCoder) {

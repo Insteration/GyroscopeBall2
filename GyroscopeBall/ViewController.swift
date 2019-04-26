@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, BallBuilder {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let ball = Ball(coordinates: view.center)
+        
+        let ball = buildBall(text: "B", point: self.view.center)
         view.addSubview(ball)
-        
-        
     }
 
 

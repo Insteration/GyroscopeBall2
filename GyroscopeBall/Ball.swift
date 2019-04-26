@@ -8,6 +8,11 @@
 
 import UIKit
 
+//struct BallModel {
+//    var centerBall: CGPoint
+//    let side = 50
+//}
+
 class Ball: UIView {
     var coordinates: CGPoint // X and Y
     private let side = 50
