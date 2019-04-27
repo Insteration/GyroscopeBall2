@@ -36,7 +36,7 @@ class ViewController: UIViewController, BallBuilder {
 
     @objc func startGyroscoper() {
         
-        animator.removeAllBehaviors()
+//        animator.removeAllBehaviors()
         
         if motionManager.isAccelerometerAvailable {
             motionManager.gyroUpdateInterval = 0.05
@@ -48,7 +48,7 @@ class ViewController: UIViewController, BallBuilder {
             }
         }
         
-        animator.addBehavior(colusion)
+//        animator.addBehavior(colusion)
 
     }
 }
